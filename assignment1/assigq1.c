@@ -23,16 +23,17 @@ void printDateOnConsole(struct date* ptrDate){
 int main()
 { struct date t;
   int n;
-   
-
-   do 
-   {
+  
     printf("1.INITIAL DATE \n");
     printf("2 USER INPUT DATE \n");
     printf("3 PRINT DATE\n");
     
     printf("enter the choice");
     scanf("%d",&n);
+   
+
+   do 
+   {
    
         switch(n)
         {

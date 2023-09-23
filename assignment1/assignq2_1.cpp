@@ -8,31 +8,31 @@ class date{
    public:
    void initDate()
    {
-      day=01;
-      month=01;
-      year=2023;
+      this->day=01;
+      this->month=01;
+      this->year=2023;
    }
    void acceptDateFromConsole()
    {
     cout<<"Enter The Date"<<endl;
-    cin>>day>>month>>year;
+    cin>> this->day>> this->month>>this->year;
    }
    void printDateOnConsole()
    {
-     cout<<day<<"-"<<month<<"-"<<year;
+     cout<<this->day<<"-"<<this->month<<"-"<<this->year;
 
    }
    bool isLeapYear()
    {
-      if(year%400==0)
+      if(this->year%400==0)
       {
         return true;
       }
-      else if(year%100==0)
+      else if(this->year%100==0)
       {
         return false;
       }
-      else if(year%4==0)
+      else if(this->year%4==0)
       {
          return true;
       }
