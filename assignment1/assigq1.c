@@ -5,7 +5,7 @@ struct date{
     int year;
 };
 void initDate(struct date* ptrDate){
-     ptrDate->day=01;
+      ptrDate->day=01;
      ptrDate->month=01;
      ptrDate->year=2023;
 
