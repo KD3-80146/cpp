@@ -84,12 +84,28 @@ class stack{
   }
   void displaystak()
   {
-    for(int i=0;i<=top;i++)
-    {
-      cout<<arr[i]<<endl;
-    }
-
+   int index;
+        cout<< "\n-----------------------------------" << endl;
+        cout<< "\n data index are :" << endl;
+        for (index = this->top; index >= 0; index--)
+        {
+            cout << "Data :" << this->arr[index] << " is present at index " << index << endl;
+        }
+        cout << "\n-----------------------------------" << endl;
   }
+    ~stack()
+    {
+        if (arr != NULL)
+        {
+            delete[] this->arr;
+            this->arr = NULL;
+        }
+    }
+  // ~stack()
+  // {
+  //   for(int i=0;i<size;i++)
+  //    delete[] arr[i];
+  // }
 };
 int main()
 { int sign;
@@ -98,6 +114,7 @@ int main()
  
   t.push(2);
    t.push(4);
+   t.push(5);
   t.displaystak();
   //t.pop();
   t.peek();
