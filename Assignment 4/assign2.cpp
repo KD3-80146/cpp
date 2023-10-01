@@ -101,11 +101,11 @@ class stack{
             this->arr = NULL;
         }
     }
-  // ~stack()
-  // {
-  //   for(int i=0;i<size;i++)
-  //    delete[] arr[i];
-  // }
+  ~stack()
+  {
+    for(int i=0;i<size;i++)
+     delete[] arr;
+  }
 };
 int main()
 { int sign;
